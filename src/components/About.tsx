@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const About = () => {
-    return <div className="grid grid-cols-2">
-        <p className="col-span-2 text-primary text-center font-bold text-5xl mb-10">Acerca de nosotros</p>
-        <p className="text-primary text-justify px-32 font-bold text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in neque
+    return <div className="grid grid-cols-1 lg:grid-cols-2">
+        <p className="lg:col-span-2 text-primary text-center font-bold text-5xl mb-10">Acerca de nosotros</p>
+        <p className="text-primary text-justify px-5 lg:pr-32 lg:px-16 font-bold text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in neque
             tincidunt, aliquet est vel, ultrices ex. Phasellus molestie velit nec eros
             fermentum egestas. Interdum et malesuada fames ac ante ipsum primis in
             faucibus. Praesent ac nisl urna. Aliquam erat volutpat. Sed condimentum
@@ -25,7 +25,7 @@ const About = () => {
             quam feugiat in. Mauris rhoncus felis et leo ultrices, at iaculis libero
             interdum. Curabitur id rhoncus sem. </p>
 
-        <div className="relative mr-32">
+        <div className="place-self-center relative lg:mr-16 w-10/12 aspect-square md:w-[600px]">
         <Image
             src="/ingenieroinstalapersiana.jpg"
             fill

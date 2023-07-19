@@ -45,9 +45,9 @@ const QuestionBox = ({ question, answer }: QuestionAndAnswer) => {
     const [active, setActive] = useState(false);
 
     return <>
-        <div className={"place-self-center w-1/2 mb-5 " + (active ? "" : "h-14")}>
+        <div className={"place-self-center w-4/6 mb-5 " + (active ? "" : "h-14")}>
             <div className={"border-x border-t border-black flex justify-between items-center h-14 px-5 " + (active ? "" : "border-b")}>
-                <p className="text-primary font-bold text-3xl">{question}</p>
+                <p className="text-primary font-bold text-xl md:text-3xl">{question}</p>
                 <button onClick={() => setActive(!active)}>
                     {
                         active ?
