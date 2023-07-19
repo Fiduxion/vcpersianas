@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useState } from "react";
+import Title from "./title";
 
 const images = ["cortinaaestandar.jpg","cortinaaluminio.png","cortinametalica.png"];
 
@@ -7,7 +8,7 @@ const Products = () => {
     const [activeImage, setActiveImage] = useState(0);
 
     return <div className="grid place-content-center">
-        <p className="text-primary text-center font-bold text-5xl pb-5">Nuestros productos</p>
+        <Title>Nuestros trabajos</Title>
         <div className="h-[250px] w-[250px] md:h-[500px] md:w-[500px] relative place-self-center">
         {
             // Here the images are show
