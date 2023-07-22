@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import Title from "./title";
+import Title from "./Title";
 import { AiOutlineSend, AiOutlineCheck } from "react-icons/ai";
 import { FaSpinner } from "react-icons/fa";
 import { BiErrorCircle } from "react-icons/bi";

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import Title from "./title";
+import Title from "./Title";
 
 interface QuestionAndAnswer {
     question: string;
@@ -42,16 +42,18 @@ const QuestionBox = ({ question, answer }: QuestionAndAnswer) => {
     const [active, setActive] = useState(false);
 
     return <>
-        <div className={"place-self-center w-4/6 mb-5 " + (active ? "" : "h-14")}>
-            <div className={"transition duration-500 ease-in-out border-x border-t border-black flex justify-between items-center h-14 px-5 " + (active ? "" : "border-b")}>
-                <p className="text-primary font-bold text-xl md:text-3xl">{question}</p>
+        <div className={"place-self-center w-4/6 mb-5 "}>
+            <div className={"transition duration-300 ease-in-out border-x border-t border-black flex justify-between items-center p-5 " + (active ? "" : "border-b")}>
+                <p className="text-primary font-bold text-2xl md:text-3xl">{question}</p>
                 <button onClick={() => setActive(!active)}>
                     <FaArrowLeft className={"transition " + (active ? "-rotate-90" : "")} size={25} />
                 </button>
             </div>
-            <p className={"transition duration-500 ease-in-out w-full text-primary text-xl border-x border-b border-black px-5 pb-2 font-bold text-justify " + (active ? "visible opacity-100" : "invisible opacity-0")}>
-                {answer}
-            </p>
+            <div className="relative">
+                <p className={"transition ease-out w-full text-primary text-xl border-x border-b border-black px-5 pb-2 font-bold text-justify origin-top " + (active ? "duration-300 scale-y-100" : "absolute scale-y-0")}>
+                    {answer}
+                </p>
+            </div>
         </div>
     </>
 }
