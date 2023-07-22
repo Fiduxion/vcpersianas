@@ -9,28 +9,32 @@ interface QuestionAndAnswer {
 
 const qa: QuestionAndAnswer[] = [
     {
-        question: "¿Que hora es?",
-        answer: `TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2`
+        question: "¿Realizan envíos?",
+        answer: `Sí, en nuestro negocio de fabricación e instalación de persianas, ofrecemos servicios de envío para que 
+        nuestros clientes puedan recibir sus persianas de manera conveniente en la ubicación que prefieran.`
     },
     {
-        question: "¿Que hora es?",
-        answer: `TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2`
+        question: "¿Cuáles son las formas de pago disponibles?",
+        answer: `En nuestro negocio de fabricación e instalación de persianas, ofrecemos dos opciones de pago: efectivo y
+        transferencia. Así, nuestros clientes pueden elegir la modalidad que les resulte más cómoda y segura para realizar 
+        sus transacciones.`
     },
     {
-        question: "¿Que hora es?",
-        answer: `TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2`
+        question: "¿Ofrecen servicio de instalación de las persianas?",
+        answer: `Sí, en nuestro negocio brindamos servicio de instalación profesional para asegurarnos de que las persianas
+        se coloquen correctamente y funcionen de manera óptima en el espacio de nuestros clientes.`
     },
     {
-        question: "¿Que hora es?",
-        answer: `TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2
-        TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2 TEXTO2`
+        question: "¿Qué tipo de garantía ofrecen para las cortinas?",
+        answer: `Nuestras cortinas cuentan con una garantía que cubre cualquier defecto de fabricación o problemas relacionados
+        con el funcionamiento, siempre y cuando no hayan sido utilizadas previamente. Garantizamos que nuestras cortinas serán
+        nuevas y sin uso al momento de ser entregadas a nuestros clientes.`
+    },
+    {
+        question: "¿Ofrecen servicio de reparación de persianas?",
+        answer: `Sí, en nuestro negocio también brindamos servicio de reparación para persianas que puedan presentar problemas
+        o daños. Nuestro equipo de profesionales está capacitado para solucionar cualquier inconveniente y asegurar que las persianas
+        funcionen correctamente y se mantengan en óptimas condiciones.`
     }
 ]
 
