@@ -29,7 +29,7 @@ const images: Image[] = [
         alt: "Una persiana que permite ver al otro lado",
     },
     {
-        src: "trespersianasmetalicasdistintotamaño.jpg",
+        src: "trespersianasmetalicasdistintotamanio.jpg",
         alt: "Tres persianas metalicas de distinto tamaño"
     }
 ];
