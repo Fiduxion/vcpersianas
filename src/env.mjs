@@ -8,6 +8,8 @@ export const env = createEnv({
    */
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    GMAIL_AUTH_USER: z.string().email(),
+    GMAIL_AUTH_PASS: z.string(),
   },
 
   /**
@@ -25,6 +27,8 @@ export const env = createEnv({
    */
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    GMAIL_AUTH_USER: process.env.GMAIL_AUTH_USER,
+    GMAIL_AUTH_PASS: process.env.GMAIL_AUTH_PASS,
     // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**

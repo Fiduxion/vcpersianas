@@ -6,7 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "next lint",
-    "start": "next start"
+    "start": "next start",
+    "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
+    "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
@@ -16,7 +18,9 @@
     "@trpc/next": "^10.26.0",
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
+    "bunyan": "^1.8.15",
     "next": "^13.4.2",
+    "preview-email": "^3.0.19",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.45.2",
@@ -25,20 +29,25 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/bunyan": "^1.8.8",
     "@types/eslint": "^8.37.0",
     "@types/node": "^18.16.0",
+    "@types/nodemailer": "^6.4.8",
     "@types/prettier": "^2.7.2",
+    "@types/preview-email": "^3.0.1",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
     "@typescript-eslint/eslint-plugin": "6.0.0",
     "@typescript-eslint/parser": "6.0.0",
     "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
     "eslint": "^8.40.0",
     "eslint-config-next": "^13.4.2",
-    "postcss": "^8.4.21",
+    "nodemailer": "^6.9.4",
+    "postcss": "^8.4.27",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
-    "tailwindcss": "^3.3.0",
+    "tailwindcss": "^3.3.3",
     "typescript": "^5.0.4"
   },
   "ct3aMetadata": {

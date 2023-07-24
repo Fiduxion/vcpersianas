@@ -19,6 +19,18 @@ const images: Image[] = [
     {
         src: "trescortinasmetalicas.jpg",
         alt: "Tres cortinas metalicas"
+    },
+    {
+        src: "persianametalicagrande.jpg",
+        alt: "Una persiana metalica grande"
+    },
+    {
+        src: "persianacuadradatraslucida.jpg",
+        alt: "Una persiana que permite ver al otro lado",
+    },
+    {
+        src: "trespersianasmetalicasdistintotamaño.jpg",
+        alt: "Tres persianas metalicas de distinto tamaño"
     }
 ];
 

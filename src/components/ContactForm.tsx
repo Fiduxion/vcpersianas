@@ -7,6 +7,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { contactInfoValidation, type ContactInfo } from "~/validation/contactInfo";
 import type { FieldError, UseFormRegister } from "react-hook-form/dist/types";
 import { useState } from "react";
+import { api } from "~/utils/api";
 
 const Input = (
     {
@@ -56,17 +57,18 @@ const ContactForm = () => {
         resolver: zodResolver(contactInfoValidation),
     });
 
+    const { mutateAsync: sendContactMail } = api.mail.send.useMutation();
+
     const [submitState, setSubmitState] = useState(-1);
 
-    const onSubmit = (values: ContactInfo) => {
-        console.log(values);
-        if(/*error*/false)
-        {
-            setError("root",{message: "Error desconocido"});
+    const onSubmit = async (values: ContactInfo) => {
+        try {
+            await sendContactMail(values);
+            setSubmitState(1);
+        } catch {
+            setError("root", { message: "Error desconocido" });
             setSubmitState(0);
         }
-        else
-            setSubmitState(1);
     }
 
     return <>
@@ -77,11 +79,11 @@ const ContactForm = () => {
             <Input register={register} error={errors.number} fieldName="number" label="Whatsapp" />
             <TextArea register={register} error={errors.message} label="Mensaje" />
             {
-                isSubmitting ? <FaSpinner className="animate-spin" size={30}/>
-                : submitState == 1 ? <div className="inline-flex items-center text-green-700 font-bold"><AiOutlineCheck size={30}/> Sus datos de contacto se enviaron con exito</div>
-                : submitState == 0 ? <div className="inline-flex items-center text-red-700 font-bold"><BiErrorCircle size={30}/> Hubo un error al enviar sus datos, intentelo denuevo mas tarde</div> : <></>
+                isSubmitting ? <FaSpinner className="animate-spin" size={30} />
+                    : submitState == 1 ? <div className="inline-flex items-center text-green-700 font-bold"><AiOutlineCheck size={30} /> Sus datos de contacto se enviaron con exito</div>
+                        : submitState == 0 ? <div className="inline-flex items-center text-red-700 font-bold"><BiErrorCircle size={30} /> Hubo un error al enviar sus datos, intentelo denuevo mas tarde</div> : <></>
             }
-            <button type="submit" className="bg-primary flex items-center justify-center gap-x-2 text-secondary w-24 rounded-lg py-2 font-bold place-self-center">Enviar <AiOutlineSend /></button>
+            <button disabled={isSubmitting} type="submit" className="bg-primary flex items-center disabled:bg-gray-500 justify-center gap-x-2 text-secondary w-24 rounded-lg py-2 font-bold place-self-center">Enviar <AiOutlineSend /></button>
         </form>
     </>
 }
