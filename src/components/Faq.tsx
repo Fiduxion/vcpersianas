@@ -43,14 +43,14 @@ const QuestionBox = ({ question, answer }: QuestionAndAnswer) => {
 
     return <>
         <div className={"place-self-center w-4/6 mb-5 "}>
-            <div className={"transition duration-300 ease-in-out border-x border-t border-black flex justify-between items-center p-5 " + (active ? "" : "border-b")}>
-                <p className="text-primary font-bold text-2xl md:text-3xl">{question}</p>
+            <div className={"transition duration-300 ease-in-out border-x-4 border-t-4 border-orange-500 rounded-t-3xl flex justify-between items-center p-5 " + (active ? "" : "border-b")}>
+                <p className="text-primary font-bold text-xl md:text-2xl">{question}</p>
                 <button onClick={() => setActive(!active)}>
                     <FaArrowLeft className={"transition " + (active ? "-rotate-90" : "")} size={25} />
                 </button>
             </div>
             <div className="relative">
-                <p className={"transition ease-out w-full text-primary text-xl border-x border-b border-black px-5 pb-2 font-bold text-justify origin-top " + (active ? "duration-300 scale-y-100" : "absolute scale-y-0")}>
+                <p className={"transition ease-out w-full text-primary text-lg border-x-4 border-b-4 border-orange-500 rounded-b-3xl px-5 pb-2 font-bold text-justify origin-top " + (active ? "duration-300 scale-y-100" : "absolute scale-y-0")}>
                     {answer}
                 </p>
             </div>

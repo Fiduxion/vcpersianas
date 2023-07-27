@@ -9,22 +9,22 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <>
+    <div>
       <Head>
         <title>Persianas 247</title>
         <meta name="Pagina de venta de persianas con un formulario de contacto"></meta>
       </Head>
-      <div className="pb-10">
-        <Banner />
+      <Banner />
+      <div className="bg-slate-800 2xl:px-64 xl:px-20 sm:px-10 px-5">
+        <Products />
+        <Division />
+        <About />
+        <Division />
+        <Faq />
+        <Division />
+        <ContactForm />
       </div>
-      <Products />
-      <Division />
-      <About />
-      <Division />
-      <Faq />
-      <Division />
-      <ContactForm />
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,31 +1,18 @@
 import Image from "next/image";
+import Title from "./Title";
 
 const About = () => {
-    return <div className="grid grid-cols-1 lg:grid-cols-2">
-        <p className="lg:col-span-2 text-primary text-center font-bold text-5xl mb-10">Acerca de nosotros</p>
-        <p className="text-primary text-justify px-5 lg:px-16 font-bold text-lg">
-            ¡Bienvenidos a Persianas247, tu solución integral para instalación, reparación y atención inmediata de persianas en Rosario!
-
-            En Persianas247, nos especializamos en brindar servicios completos para tus persianas. Contamos con un equipo profesional altamente capacitado y con una amplia experiencia en el campo, lo que nos permite garantizar resultados excepcionales en cada proyecto que emprendemos.
-
-            Lo que nos hace destacar es nuestra dedicación a la máxima satisfacción del cliente. Estamos disponibles las 24 horas del día, los 7 días de la semana, para atender tus llamados y acudir rápidamente a solucionar cualquier problema con tus persianas. Nuestra premisa es la inmediatez, comprendemos lo valioso que es tu tiempo y nos esforzamos por brindar soluciones rápidas y efectivas.
-
-            En Persianas247, utilizamos materiales y herramientas de vanguardia para garantizar la durabilidad y resistencia en cada instalación y reparación que realizamos. Sea cual sea el tamaño o la complejidad del trabajo, estamos preparados para superar tus expectativas y ofrecerte un servicio de calidad.
-
-            Ya sea que necesites una reparación urgente o desees instalar nuevas persianas, nuestro equipo se adapta a tus necesidades específicas y te brinda un servicio personalizado.
-
-            Confía en Persianas247 para obtener resultados excepcionales y un servicio confiable en la ciudad de Rosario. Estamos aquí para mejorar tu espacio con nuestras soluciones profesionales de persianas, disponibles las 24 horas, los 7 días de la semana.
-
-            ¡No dudes en contactarnos en cualquier momento y permítenos demostrarte por qué somos la mejor opción para tus persianas! </p>
-
-        <div className="place-self-center relative w-10/12 aspect-square md:w-[600px]">
-            <Image
-                className="object-cover"
-                src="/ingenieroinstalapersiana.jpg"
-                fill
-                alt="Ingeniero instala persiana"
-            />
-        </div>
+    return <div className="">
+        <Title>Acerca de nosotros</Title>
+        <p className="text-slate-200 text-justify text-xl md:w-2/3 m-auto">
+        <span className="font-bold text-orange-500">Persianas 247</span> es tu solución completa en Rosario para la instalación, reparación y atención inmediata de persianas, 
+        disponibles las 24 horas. Con nuestro equipo profesional altamente capacitado, garantizamos resultados excepcionales y 
+        nos enfocamos en la máxima satisfacción del cliente. Nos destacamos por nuestro compromiso con la rapidez y eficacia 
+        en cada proyecto. Usamos herramientas y materiales de última generación para asegurar durabilidad en cada instalación 
+        y reparación. No importa el tamaño o complejidad del trabajo, estamos preparados para exceder tus expectativas con 
+        un servicio de calidad adaptado a tus necesidades. Confía en <span className="font-bold text-orange-500">Persianas 247</span> para obtener soluciones profesionales que 
+        mejoran tu espacio. ¡Contactanos en cualquier momento!
+        </p>
     </div>
 
 }
