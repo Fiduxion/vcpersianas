@@ -84,7 +84,7 @@ const ContactForm = () => {
                         : submitState == 1 ? <div className="inline-flex items-center text-green-700 font-bold"><AiOutlineCheck size={30} /> Sus datos de contacto se enviaron con exito</div>
                             : submitState == 0 ? <div className="inline-flex items-center text-red-700 font-bold"><BiErrorCircle size={30} /> Hubo un error al enviar sus datos, intentelo denuevo mas tarde</div> : <></>
                 }
-                <button disabled={isSubmitting} type="submit" className="text-xl mb-5 px-12 py-4 bg-orange-500 disabled:bg-gray-500 text-slate-950 rounded-2xl font-bold">Enviar</button>
+                <button disabled={isSubmitting} type="submit" className="text-xl mb-5 px-12 py-4 bg-orange-500 disabled:bg-gray-500 text-slate-950 rounded-2xl font-bold hover:bg-orange-600 transition">Enviar</button>
             </form>
         </div>
     </>

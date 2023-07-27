@@ -1,6 +1,6 @@
 import Banner from "~/components/Banner";
 import Products from "~/components/Products";
-import Division from "~/components/Division";
+import WhatsAppButton from "~/components/WhatsAppButton";
 import About from "~/components/About";
 import Faq from "~/components/Faq";
 import ContactForm from "~/components/ContactForm";
@@ -22,6 +22,7 @@ export default function Home() {
         <ContactForm />
       </div>
       <Footer />
+      <WhatsAppButton/>
     </div>
   );
 }
