@@ -15,13 +15,10 @@ export default function Home() {
         <meta name="Pagina de venta de persianas con un formulario de contacto"></meta>
       </Head>
       <Banner />
-      <div className="bg-slate-800 2xl:px-64 xl:px-20 sm:px-10 px-5">
+      <div className="bg-slate-800 2xl:px-64 xl:px-20 sm:px-10 px-5 space-y-32">
         <Products />
-        <Division />
         <About />
-        <Division />
         <Faq />
-        <Division />
         <ContactForm />
       </div>
       <Footer />
