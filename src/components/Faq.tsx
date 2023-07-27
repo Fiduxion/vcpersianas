@@ -42,7 +42,7 @@ const QuestionBox = ({ question, answer }: QuestionAndAnswer) => {
     const [active, setActive] = useState(false);
 
     return <>
-        <div className={"place-self-center w-2/3 mb-5 "}>
+        <div className={"place-self-center w-4/5 md:w-2/3 mb-5 "}>
             <div className={"transition duration-300 ease-in-out bg-orange-400 rounded-t-3xl flex justify-between items-center p-5 " + (active ? "" : "border-b")}>
                 <p className="text-slate-900 font-bold text-xl md:text-2xl">{question}</p>
                 <button onClick={() => setActive(!active)}>
@@ -50,7 +50,7 @@ const QuestionBox = ({ question, answer }: QuestionAndAnswer) => {
                 </button>
             </div>
             <div className="relative">
-                <p className={"transition ease-out w-full text-slate-900 text-lg bg-orange-400 rounded-b-3xl px-5 pb-2 font-bold text-justify origin-top " + (active ? "duration-300 scale-y-100" : "absolute scale-y-0")}>
+                <p className={"transition ease-out w-full text-slate-800 text-lg bg-orange-400 rounded-b-3xl px-5 pb-2 font-semibold text-justify origin-top " + (active ? "duration-300 scale-y-100" : "absolute scale-y-0")}>
                     {answer}
                 </p>
             </div>

@@ -24,7 +24,7 @@ const Input = (
             error: FieldError | undefined
         }
 ) => {
-    return <div className="w-1/2 place-self-center">
+    return <div className="w-4/5 md:w-1/2 place-self-center">
         <input maxLength={50} {...register(fieldName)} className={`border ${(error) ? "border-red-600 border-4" : "border-orange-500"} rounded-full border-2 text-xl bg-slate-100/10 placeholder:text-slate-300 pl-5 py-4 placeholder:font-semibold flex items-center w-full focus:outline-none focus:bg-slate-100/25 transition text-slate-100 font-semibold`} placeholder={label}></input>
         <p className={error ? "text-red-600" : "text-black"}>{error?.message}</p>
     </div>
@@ -41,7 +41,7 @@ const TextArea = ({
         register: UseFormRegister<ContactInfo>,
         error: FieldError | undefined
     }) => {
-    return <div className="w-1/2 h-48 place-self-center">
+    return <div className="w-4/5 md:w-1/2 h-48 place-self-center">
         <textarea maxLength={500} {...register("message")} className={`border ${(error) ? "border-red-600 border-2" : "border-orange-500"} w-full h-full rounded-3xl border-2 text-xl bg-slate-100/10 placeholder:text-slate-300 pl-5 py-4 placeholder:font-semibold flex items-center focus:outline-none focus:bg-slate-100/25 transition text-slate-100 font-semibold`} placeholder={label}></textarea>
         <p className={error ? "text-red-600" : "text-black"}>{error?.message}</p>
     </div>

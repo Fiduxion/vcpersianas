@@ -9,12 +9,12 @@ interface Image {
 
 const images: Image[] = [
     {
-        src: "cortinametalicaconpuerta.jpg",
-        alt: "Una cortina metalica con puerta"
-    },
-    {
         src: "doscortinasmetalicas.jpg",
         alt: "Dos cortinas metalicas"
+    },
+    {
+        src: "cortinametalicaconpuerta.jpg",
+        alt: "Una cortina metalica con puerta"
     },
     {
         src: "trescortinasmetalicas.jpg",
