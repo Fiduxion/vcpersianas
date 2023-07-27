@@ -9,13 +9,13 @@ import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-poppins bg-slate-900">
       <Head>
         <title>Persianas 247</title>
         <meta name="Pagina de venta de persianas con un formulario de contacto"></meta>
       </Head>
       <Banner />
-      <div className="bg-slate-800 2xl:px-64 xl:px-20 sm:px-10 px-5 space-y-32">
+      <div className="2xl:px-64 xl:px-20 sm:px-10 px-5 space-y-32">
         <Products />
         <About />
         <Faq />

@@ -1,7 +1,7 @@
 const Banner = () => {
-    return <div className="bg-slate-950 h-32 grid place-content-center">
-        <p className="text-orange-500 font-semibold text-4xl md:text-5xl">PERSIANAS 247</p>
-        <p className="text-slate-300 md:text-xl text-center">Las mejores persianas</p>
+    return <div className="bg-slate-950 h-32 grid place-content-center rounded-b-3xl">
+        <p className=" bg-gradient-to-r from-orange-500 to-red-600 bg-clip-text text-transparent font-semibold text-4xl md:text-6xl">Persianas 
+        <span className="font-black"> 247</span></p>
     </div>
 }
 

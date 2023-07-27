@@ -4,7 +4,7 @@ import { AiOutlineMail, AiFillEye } from "react-icons/ai";
 
 const Footer = () => {
     return <div className="md:h-48 bg-slate-950 justify-items-center flex justify-around px-20">
-        <p className="text-orange-500 place-self-center font-bold text-4xl">PERSIANAS 247</p>
+        <p className="text-orange-500 place-self-center font-bold text-4xl">Persianas 247</p>
         <div className="flex gap-16">
             <ImFacebook2 className="place-self-center text-slate-100" size={40}/>
             <FaWhatsapp className="place-self-center text-slate-100" size={40}/>

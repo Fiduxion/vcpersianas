@@ -37,7 +37,7 @@ const images: Image[] = [
 const Products = () => {
     const [activeImage, setActiveImage] = useState(0);
 
-    return <div className="grid place-content-center">
+    return <div className="grid place-content-center pt-10">
         <Title>Nuestros trabajos</Title>
         <div className="w-screen grid">
             <div className="h-[250px] w-10/12 md:h-[500px] relative place-self-center">

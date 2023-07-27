@@ -72,20 +72,20 @@ const ContactForm = () => {
     }
 
     return <>
-        <div>
-        <Title>Contactanos</Title>
-        <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="grid grid-cols-1 items-center place-items-center w-full gap-y-5">
-            <Input register={register} error={errors.name} fieldName="name" label="Nombre" />
-            <Input register={register} error={errors.email} fieldName="email" label="Email" />
-            <Input register={register} error={errors.number} fieldName="number" label="Whatsapp" />
-            <TextArea register={register} error={errors.message} label="Mensaje" />
-            {
-                isSubmitting ? <FaSpinner className="animate-spin" size={30} />
-                    : submitState == 1 ? <div className="inline-flex items-center text-green-700 font-bold"><AiOutlineCheck size={30} /> Sus datos de contacto se enviaron con exito</div>
-                        : submitState == 0 ? <div className="inline-flex items-center text-red-700 font-bold"><BiErrorCircle size={30} /> Hubo un error al enviar sus datos, intentelo denuevo mas tarde</div> : <></>
-            }
-            <button disabled={isSubmitting} type="submit" className="text-xl mb-5 px-12 py-4 bg-orange-500 disabled:bg-gray-500 text-slate-950 rounded-2xl font-bold">Enviar</button>
-        </form>
+        <div className="pb-20">
+            <Title>Contactanos</Title>
+            <form onSubmit={(e) => void handleSubmit(onSubmit)(e)} className="grid grid-cols-1 items-center place-items-center w-full gap-y-5">
+                <Input register={register} error={errors.name} fieldName="name" label="Nombre" />
+                <Input register={register} error={errors.email} fieldName="email" label="Email" />
+                <Input register={register} error={errors.number} fieldName="number" label="Whatsapp" />
+                <TextArea register={register} error={errors.message} label="Mensaje" />
+                {
+                    isSubmitting ? <FaSpinner className="animate-spin" size={30} />
+                        : submitState == 1 ? <div className="inline-flex items-center text-green-700 font-bold"><AiOutlineCheck size={30} /> Sus datos de contacto se enviaron con exito</div>
+                            : submitState == 0 ? <div className="inline-flex items-center text-red-700 font-bold"><BiErrorCircle size={30} /> Hubo un error al enviar sus datos, intentelo denuevo mas tarde</div> : <></>
+                }
+                <button disabled={isSubmitting} type="submit" className="text-xl mb-5 px-12 py-4 bg-orange-500 disabled:bg-gray-500 text-slate-950 rounded-2xl font-bold">Enviar</button>
+            </form>
         </div>
     </>
 }
