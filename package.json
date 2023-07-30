@@ -18,7 +18,6 @@
     "@trpc/next": "^10.26.0",
     "@trpc/react-query": "^10.26.0",
     "@trpc/server": "^10.26.0",
-    "bunyan": "^1.8.15",
     "next": "^13.4.2",
     "preview-email": "^3.0.19",
     "react": "18.2.0",

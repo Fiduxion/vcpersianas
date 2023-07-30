@@ -1,14 +1,12 @@
 import { useForm } from "react-hook-form";
 import Title from "./Title";
-import { AiOutlineSend, AiOutlineCheck } from "react-icons/ai";
+import { AiOutlineCheck } from "react-icons/ai";
 import { FaSpinner } from "react-icons/fa";
 import { BiErrorCircle } from "react-icons/bi";
 import { zodResolver } from '@hookform/resolvers/zod';
 import { contactInfoValidation, type ContactInfo } from "~/validation/contactInfo";
 import type { FieldError, UseFormRegister } from "react-hook-form/dist/types";
 import { useState } from "react";
-import { api } from "~/utils/api";
-
 const Input = (
     {
         label,
@@ -51,24 +49,16 @@ const ContactForm = () => {
     const {
         register,
         handleSubmit,
-        setError,
         formState: { errors, isSubmitting },
     } = useForm<ContactInfo>({
         resolver: zodResolver(contactInfoValidation),
     });
 
-    const { mutateAsync: sendContactMail } = api.mail.send.useMutation();
-
     const [submitState, setSubmitState] = useState(-1);
 
-    const onSubmit = async (values: ContactInfo) => {
-        try {
-            await sendContactMail(values);
-            setSubmitState(1);
-        } catch {
-            setError("root", { message: "Error desconocido" });
-            setSubmitState(0);
-        }
+    const onSubmit = () => {
+        // For now mail form is disabled
+        setSubmitState(0);
     }
 
     return <>

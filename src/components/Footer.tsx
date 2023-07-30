@@ -1,4 +1,3 @@
-import { ImFacebook2 } from "react-icons/im";
 import { FaWhatsapp } from "react-icons/fa";
 import { AiOutlineMail, AiFillEye } from "react-icons/ai";
 
@@ -6,7 +5,6 @@ const Footer = () => {
     return <div className="py-16 bg-slate-950 justify-items-center flex md:flex-row flex-col justify-around items-center md:px-20 gap-10">
         <p className="text-orange-500 place-self-center font-bold text-4xl">Persianas 247</p>
         <div className="flex gap-16">
-            <ImFacebook2 className="place-self-center text-slate-100" size={40}/>
             <a href="https://w.app/persianas247"><FaWhatsapp className="place-self-center text-slate-100" size={40}/></a>
             <a href="mailto:persianaemiliano@gmail.com" ><AiOutlineMail className="place-self-center text-slate-100" size={40}/></a>
         </div>
