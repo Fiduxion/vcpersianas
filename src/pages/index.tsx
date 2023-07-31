@@ -12,6 +12,7 @@ export default function Home() {
     <div className="font-poppins bg-slate-900">
       <Head>
         <title>Persianas 247</title>
+        <meta charSet="utf-8"></meta>
         <meta name="Pagina de venta de persianas con un formulario de contacto"></meta>
       </Head>
       <Banner />
