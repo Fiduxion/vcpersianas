@@ -54,11 +54,36 @@ const ContactForm = () => {
         resolver: zodResolver(contactInfoValidation),
     });
 
+    /*
+        -2: Form is submiting
+        -1: Form is yet to be submitted
+         0: Form submitted with an error
+         1: Form submitted successfully
+    */
     const [submitState, setSubmitState] = useState(-1);
 
-    const onSubmit = () => {
-        // For now mail form is disabled
-        setSubmitState(0);
+    const onSubmit = async (values: ContactInfo) => {
+        setSubmitState(-2);
+
+        try {
+            const res = await fetch("https://mailform.fiduxion.com", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin": "*",
+                },
+                body: JSON.stringify({
+                    origin: "persianas",
+                    data: values
+                })
+            });
+            console.log(res);
+
+            setSubmitState(+res.ok);
+        } catch(e) {
+            console.error(e);
+            setSubmitState(0);
+        }
     }
 
     return <>
