@@ -77,11 +77,9 @@ const ContactForm = () => {
                     data: values
                 })
             });
-            console.log(res);
 
             setSubmitState(+res.ok);
         } catch(e) {
-            console.error(e);
             setSubmitState(0);
         }
     }

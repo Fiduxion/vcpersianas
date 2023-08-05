@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="font-poppins bg-slate-900 overflow-x-hidden">
       <Head>
-        <title>Persianas 247</title>
+        <title>Persianas 24 horas</title>
         <meta charSet="utf-8"></meta>
         <meta name="description" content="Instalación, reparación y atención inmediata de persianas en Rosario y alrededores, disponibles las 24 horas"></meta>
         <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
