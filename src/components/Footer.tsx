@@ -3,10 +3,10 @@ import { AiOutlineMail, AiFillEye } from "react-icons/ai";
 
 const Footer = () => {
     return <div className="py-16 bg-slate-950 justify-items-center flex md:flex-row flex-col justify-around items-center md:px-20 gap-10">
-        <p className="text-orange-500 place-self-center font-bold text-4xl">Persianas 24 horas</p>
+        <div className="text-orange-500 place-self-center font-bold text-4xl"><p>Persianas</p> <p className="ml-3">24 horas</p></div>
         <div className="flex gap-16">
-            <a href="https://wa.me/5493413923576"><FaWhatsapp className="place-self-center text-slate-100" size={40}/></a>
-            <a href="mailto:persianaemiliano@gmail.com" ><AiOutlineMail className="place-self-center text-slate-100" size={40}/></a>
+            <a aria-label="Enviar Whatsapp" href="https://wa.me/5493413923576"><FaWhatsapp className="place-self-center text-slate-100" size={40}/></a>
+            <a aria-label="Enviar Email" href="mailto:persianaemiliano@gmail.com" ><AiOutlineMail className="place-self-center text-slate-100" size={40}/></a>
         </div>
         <div className="flex items-center">
             <div className="place-self-center">

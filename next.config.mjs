@@ -4,8 +4,8 @@ const config = {
   output: "export",
   images: {
     unoptimized: true,
+    minimumCacheTTL: 120,
   },
-
   /**
    * If you have `experimental: { appDir: true }` set, then you must comment the below `i18n` config
    * out.

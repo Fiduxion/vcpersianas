@@ -9,27 +9,27 @@ interface Image {
 
 const images: Image[] = [
     {
-        src: "doscortinasmetalicas.jpg",
+        src: "doscortinasmetalicas.avif",
         alt: "Dos cortinas metalicas"
     },
     {
-        src: "cortinametalicaconpuerta.jpg",
+        src: "cortinametalicaconpuerta.avif",
         alt: "Una cortina metalica con puerta"
     },
     {
-        src: "trescortinasmetalicas.jpg",
+        src: "trescortinasmetalicas.avif",
         alt: "Tres cortinas metalicas"
     },
     {
-        src: "persianametalicagrande.jpg",
+        src: "persianametalicagrande.avif",
         alt: "Una persiana metalica grande"
     },
     {
-        src: "persianacuadradatraslucida.jpg",
+        src: "persianacuadradatraslucida.avif",
         alt: "Una persiana que permite ver al otro lado",
     },
     {
-        src: "trespersianasmetalicasdistintotamanio.jpg",
+        src: "trespersianasmetalicasdistintotamanio.avif",
         alt: "Tres persianas metalicas de distinto tamaño"
     }
 ];
@@ -43,14 +43,14 @@ const Products = () => {
             <div className="h-[250px] w-10/12 md:h-[500px] relative place-self-center">
                 {
                     // Here the images are show
-                    images.map((img, index) => <Image className={"object-scale-down " + (activeImage == index ? "block" : "hidden")} key={"Imagen " + img.src} src={"/" + img.src} fill alt={img.alt} />)
+                    images.map((img, index) => <Image priority={index==0} className={"object-scale-down " + (activeImage == index ? "block" : "hidden")} key={"Imagen " + img.src} sizes="(max-width: 2000px) 83vw" src={"/" + img.src} fill alt={img.alt} />)
                 }
             </div>
         </div>
         <div className="flex flex-wrap gap-y-5 pt-10 gap-x-5 place-content-center">
             {
                 // The buttons used to show the images
-                images.map((img, index) => <div className="h-[100px] w-[100px] relative" key={"Boton imagen " + img.src}><Image onClick={() => setActiveImage(index)} className={"object-cover " + (activeImage == index ? "opacity-100" : "opacity-50")} src={"/" + img.src} fill alt={img.alt} /></div>)
+                images.map((img, index) => <div className="h-[100px] w-[100px] relative" key={"Boton imagen " + img.src}><Image priority onClick={() => setActiveImage(index)} className={"object-cover " + (activeImage == index ? "opacity-100" : "opacity-50")} sizes="100px" src={"/" + img.src} fill alt={img.alt} /></div>)
             }
         </div>
     </div>
