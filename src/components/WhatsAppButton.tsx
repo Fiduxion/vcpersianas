@@ -38,7 +38,7 @@ const WhatsAppButton = () => {
       aria-label="Boton flotante de Whatsapp"
       onClick={() =>
         void gtag_report_conversion(
-          "https://wa.me/5493413923576/?text=Hola%20tengo%20una%20urgencia.%20Me%20comunico%20desde%20la%20web."
+          "https://wa.me/5493412153361/?text=Hola%20tengo%20una%20urgencia.%20Me%20comunico%20desde%20la%20web."
         )
       }
     >
