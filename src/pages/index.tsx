@@ -47,7 +47,7 @@ export default function Home() {
         <Products />
         <About />
         <Faq />
-        <ContactForm />
+        {/*<ContactForm />*/}
       </div>
       <WhatsAppButton />
       <Footer />
