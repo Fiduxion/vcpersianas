@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="overflow-x-hidden bg-slate-900 font-poppins">
       <Head>
-        <title>Persianas 24 horas</title>
+        <title>V&C Persianas</title>
         <meta charSet="utf-8"></meta>
         <meta
           name="description"

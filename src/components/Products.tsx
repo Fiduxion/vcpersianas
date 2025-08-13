@@ -9,28 +9,36 @@ interface Image {
 
 const images: Image[] = [
     {
-        src: "doscortinasmetalicas.avif",
-        alt: "Dos cortinas metalicas"
+        src: "i1.jpg",
+        alt: "Dos persianas"
     },
     {
-        src: "cortinametalicaconpuerta.avif",
+        src: "i2.jpg",
+        alt: "Una cortina metalica"
+    },
+    {
+        src: "i3.jpg",
         alt: "Una cortina metalica con puerta"
     },
     {
-        src: "trescortinasmetalicas.avif",
-        alt: "Tres cortinas metalicas"
+        src: "i4.jpg",
+        alt: "Una cortina metalica levantada"
     },
     {
-        src: "persianametalicagrande.avif",
-        alt: "Una persiana metalica grande"
+        src: "i5.jpg",
+        alt: "Una cortina metalica alta",
     },
     {
-        src: "persianacuadradatraslucida.avif",
-        alt: "Una persiana que permite ver al otro lado",
+        src: "i6.jpg",
+        alt: "Una persiana con puerta"
     },
     {
-        src: "trespersianasmetalicasdistintotamanio.avif",
-        alt: "Tres persianas metalicas de distinto tamaño"
+        src: "i7.jpg",
+        alt: "Una cortina metálica vista desde adentro"
+    },
+    {
+        src: "i8.jpg",
+        alt: "Taller con cortina metálica en la entrada"
     }
 ];
 
